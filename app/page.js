@@ -12,7 +12,31 @@ export default function Home() {
         </div>
 
         <a
-          href="https://wa.me/918002697331"
+          onClick={() => {
+  const pickup =
+    document.getElementById("pickup").value;
+
+  const drop =
+    document.getElementById("drop").value;
+
+  const date =
+    document.getElementById("date").value;
+
+  const time =
+    document.getElementById("time").value;
+
+  const message =
+    `🚖 New Cab Booking %0A%0A` +
+    `📍 Pickup: ${pickup}%0A` +
+    `📌 Drop: ${drop}%0A` +
+    `📅 Date: ${date}%0A` +
+    `⏰ Time: ${time}`;
+
+  window.open(
+    `https://wa.me/91YOURNUMBER?text=${message}`,
+    "_blank"
+  );
+}}
           className="bg-green-600 text-white px-5 py-3 rounded-xl font-semibold"
         >
           WhatsApp Booking
@@ -44,7 +68,7 @@ export default function Home() {
 
               <input
                 placeholder="Drop Location"
-                className="border border-gray-200 rounded-2xl px-5 py-4"
+                className="bg-gray-50 border-2 border-gray-100 rounded-2xl px-5 py-4 shadow-sm focus:border-green-500 focus:bg-white transition-all duration-300"
               />
             </div>
 
