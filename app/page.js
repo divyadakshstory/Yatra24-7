@@ -12,7 +12,7 @@ export default function Home() {
         </div>
 
         <a
-          href="https://wa.me/919999999999"
+          href="https://wa.me/918002697331"
           className="bg-green-600 text-white px-5 py-3 rounded-xl font-semibold"
         >
           WhatsApp Booking
