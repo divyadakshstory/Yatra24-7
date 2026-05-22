@@ -180,23 +180,33 @@ Customer booked from website`;
 
               {/* Date Time */}
 
-              <div className="grid md:grid-cols-2 gap-5">
+ <div className="grid grid-cols-2 gap-4">
+  <div>
+    <label className="text-gray-400 text-sm mb-2 block">
+      📅 Pickup Date
+    </label>
 
-                <input
-                  type="date"
-                  value={date}
-                  onChange={(e) => setDate(e.target.value)}
-                  className="w-full bg-white/10 border border-white/10 rounded-2xl px-5 py-5 text-white focus:outline-none focus:border-green-500 transition-all"
-                />
+    <input
+      type="date"
+      value={date}
+      onChange={(e) => setDate(e.target.value)}
+      className="w-full bg-[#1f1f1f] border border-gray-700 rounded-2xl p-4 text-white outline-none"
+    />
+  </div>
 
-                <input
-                  type="time"
-                  value={time}
-                  onChange={(e) => setTime(e.target.value)}
-                  className="w-full bg-white/10 border border-white/10 rounded-2xl px-5 py-5 text-white focus:outline-none focus:border-green-500 transition-all"
-                />
+  <div>
+    <label className="text-gray-400 text-sm mb-2 block">
+      🕒 Pickup Time
+    </label>
 
-              </div>
+    <input
+      type="time"
+      value={time}
+      onChange={(e) => setTime(e.target.value)}
+      className="w-full bg-[#1f1f1f] border border-gray-700 rounded-2xl p-4 text-white outline-none"
+    />
+  </div>
+</div>
 
               {/* Button */}
 
