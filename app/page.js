@@ -127,17 +127,14 @@ export default function Home() {
               className="bg-black border border-gray-700 rounded-xl p-4 outline-none"
             />
 
-            <select
-              id="car"
-              className="bg-black border border-gray-700 rounded-xl p-4 outline-none md:col-span-2"
-            >
-              <option>Select Vehicle</option>
-              <option>Swift Dzire</option>
-              <option>Ertiga</option>
-              <option>Scorpio</option>
-              <option>Innova Crysta</option>
-              <option>Fortuner</option>
-            </select>
+      <select
+  className="w-full bg-[#050816] border border-gray-800 rounded-2xl px-5 py-5 text-white outline-none focus:border-[#ff5e00]"
+>
+  <option>Choose Ride Type</option>
+  <option>Sedan • Swift Dzire / Aura</option>
+  <option>SUV • Ertiga / Scorpio</option>
+  <option>Premium • Innova Crysta</option>
+</select>
 
           </div>
 
