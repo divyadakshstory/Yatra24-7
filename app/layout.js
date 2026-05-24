@@ -1,16 +1,17 @@
 export const metadata = {
-  title: "Yatra24-7 | Premium Bihar Cab Booking Service",
+  title: "Luxury Cab Service in Bihar | Yatra24×7",
   description:
-    "Book premium cab rides across Bihar with Yatra24-7. Fast, safe and affordable taxi service for airport, local and intercity rides.",
+    "Book premium taxi services in Bihar with Yatra24×7. Airport transfers, outstation rides, wedding cars and 24×7 luxury cab booking across Saharsa, Patna and Darbhanga.",
   keywords: [
-    "Patna Taxi Service",
-    "Bihar Cab Booking",
-    "Airport Taxi Bihar",
-    "24x7 Cab Service",
-    "Intercity Cab Bihar",
-    "Cab Booking Patna",
-    "Premium Cab Bihar",
-    "Taxi Service Bihar",
+    "Bihar taxi service",
+    "Luxury cab Bihar",
+    "Airport taxi Bihar",
+    "Saharsa cab booking",
+    "Bihar outstation cab",
+    "Patna airport taxi",
+    "Darbhanga airport cab",
+    "24×7 taxi service Bihar",
+    "Premium cab booking Bihar",
   ],
 };
 
