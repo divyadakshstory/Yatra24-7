@@ -375,34 +375,36 @@ export default function Home() {
       <p className="text-gray-400 mb-8">
         Follow Yatra24x7 on social platforms and book rides instantly on WhatsApp.
       </p>
+<div className="flex gap-6 mt-8">
 
-      <div className="flex gap-5">
+  {/* FACEBOOK */}
+  <a
+    href="https://www.facebook.com/profile.php?id=61589987597600"
+    target="_blank"
+    className="text-white text-4xl hover:text-[#1877F2] transition-all duration-300"
+  >
+    <i className="fab fa-facebook"></i>
+  </a>
 
-        <a
-          href="https://www.facebook.com/profile.php?id=61589987597600"
-          target="_blank"
-          className="w-16 h-16 rounded-2xl bg-[#1877F2]/10 border border-[#1877F2]/30 flex items-center justify-center text-2xl hover:scale-110 transition-all"
-        >
-          👍
-        </a>
+  {/* INSTAGRAM */}
+  <a
+    href="https://www.instagram.com/yatra24.7?igsh=amRkY2IweXFiY3g3"
+    target="_blank"
+    className="text-white text-4xl hover:text-pink-500 transition-all duration-300"
+  >
+    <i className="fab fa-instagram"></i>
+  </a>
 
-        <a
-          href="https://www.instagram.com/yatra24.7?igsh=amRkY2IweXFiY3g3"
-          target="_blank"
-          className="w-16 h-16 rounded-2xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-2xl hover:scale-110 transition-all"
-        >
-          📸
-        </a>
+  {/* WHATSAPP */}
+  <a
+    href="https://wa.me/918002697331"
+    target="_blank"
+    className="text-white text-4xl hover:text-[#25D366] transition-all duration-300"
+  >
+    <i className="fab fa-whatsapp"></i>
+  </a>
 
-        <a
-          href="https://wa.me/918002697331"
-          target="_blank"
-          className="w-16 h-16 rounded-2xl bg-green-500/10 border border-green-500/30 flex items-center justify-center text-2xl hover:scale-110 transition-all"
-        >
-          💬
-        </a>
-
-      </div>
+</div>
 
       <div className="mt-10 pt-6 border-t border-gray-800 text-gray-500 text-sm">
         © 2026 Yatra24x7. All rights reserved.
