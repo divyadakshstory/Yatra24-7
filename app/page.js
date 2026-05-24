@@ -321,62 +321,93 @@ export default function Home() {
 
       </section>
 
-   {/* CONTACT SECTION */}
+{/* CONTACT SECTION */}
 
 <section
   id="contact"
-  className="py-24 px-6 bg-gradient-to-b from-black to-[#111827] text-white"
+  className="bg-[#070b14] py-24 px-6 border-t border-gray-800"
 >
-  <div className="max-w-6xl mx-auto text-center">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
 
-    <p className="uppercase tracking-[6px] text-[#ff6b00] text-sm mb-4">
-      Connect With Us
-    </p>
+    {/* LEFT SIDE */}
 
-    <h2 className="text-5xl font-black mb-6">
-      Contact Yatra24x7
-    </h2>
+    <div>
 
-    <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
-      Premium cab booking service across Bihar.  
-      Safe rides, verified drivers and instant WhatsApp support.
-    </p>
+      <p className="text-[#ff6b00] uppercase tracking-[5px] text-sm mb-4">
+        Contact
+      </p>
 
-    <div className="flex justify-center gap-6 flex-wrap">
+      <h2 className="text-5xl md:text-6xl font-black text-white leading-tight mb-6">
+        Bihar’s Premium
+        <br />
+        Cab Service
+      </h2>
 
-      <a
-        href="https://www.instagram.com/yatra24.7?igsh=amRkY2IweXFiY3g3"
-        target="_blank"
-        className="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center text-3xl hover:bg-[#E1306C] transition-all duration-300"
-      >
-        📸
-      </a>
+      <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
+        Reach us anytime for airport transfers, wedding rides,
+        business trips and outstation travel across Bihar.
+      </p>
 
-      <a
-        href="https://www.facebook.com/profile.php?id=61589987597600"
-        target="_blank"
-        className="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center text-3xl hover:bg-[#1877F2] transition-all duration-300"
-      >
-        👍
-      </a>
+      <div className="mt-10 space-y-4 text-gray-300">
 
-      <a
-        href="https://wa.me/918002697331"
-        target="_blank"
-        className="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center text-3xl hover:bg-[#25D366] transition-all duration-300"
-      >
-        💬
-      </a>
+        <div className="flex items-center gap-4">
+          <span className="text-[#ff6b00] text-xl">📞</span>
+          <span>+91 8002697331</span>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <span className="text-[#ff6b00] text-xl">📍</span>
+          <span>Patna, Bihar</span>
+        </div>
+
+      </div>
 
     </div>
 
-    <div className="mt-10 space-y-2 text-gray-400">
-      <p>📞 +91 8002697331</p>
-      <p>📍 Bihar Premium Cab Service</p>
-    </div>
+    {/* RIGHT SIDE */}
 
-    <div className="mt-12 text-gray-500 text-sm">
-      © 2026 Yatra24x7. All rights reserved.
+    <div className="bg-[#0f1724] border border-gray-800 rounded-3xl p-10">
+
+      <h3 className="text-3xl font-bold text-white mb-6">
+        Connect With Us
+      </h3>
+
+      <p className="text-gray-400 mb-8">
+        Follow Yatra24x7 on social platforms and book rides instantly on WhatsApp.
+      </p>
+
+      <div className="flex gap-5">
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61589987597600"
+          target="_blank"
+          className="w-16 h-16 rounded-2xl bg-[#1877F2]/10 border border-[#1877F2]/30 flex items-center justify-center text-2xl hover:scale-110 transition-all"
+        >
+          👍
+        </a>
+
+        <a
+          href="https://www.instagram.com/yatra24.7?igsh=amRkY2IweXFiY3g3"
+          target="_blank"
+          className="w-16 h-16 rounded-2xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-2xl hover:scale-110 transition-all"
+        >
+          📸
+        </a>
+
+        <a
+          href="https://wa.me/918002697331"
+          target="_blank"
+          className="w-16 h-16 rounded-2xl bg-green-500/10 border border-green-500/30 flex items-center justify-center text-2xl hover:scale-110 transition-all"
+        >
+          💬
+        </a>
+
+      </div>
+
+      <div className="mt-10 pt-6 border-t border-gray-800 text-gray-500 text-sm">
+        © 2026 Yatra24x7. All rights reserved.
+      </div>
+
     </div>
 
   </div>
