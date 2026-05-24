@@ -1,3 +1,4 @@
+"use client";
 export default function Home() {
   return (
     <main className="bg-black text-white overflow-hidden">
