@@ -41,9 +41,12 @@ export default function Home() {
 
       {/* Hero */}
 
-      <section className="relative min-h-screen flex items-center justify-center px-6">
-       <img
-  src="https://images.unsplash.com/photo-1511527844068-006b95d162c2?q=80&w=1600&auto=format&fit=crop"
-  className="absolute inset-0 w-full h-full object-cover opacity-30"
-/>
-        <div className="max-w-7xl relative z-10 text-center">
+   <section className="relative min-h-screen flex items-center justify-center px-6">
+
+  <img
+    src="https://images.unsplash.com/photo-1511527844068-006b95d162c2?q=80&w=1600&auto=format&fit=crop"
+    alt="Luxury Cab"
+    className="absolute inset-0 w-full h-full object-cover opacity-30"
+  />
+
+  <div className="max-w-7xl relative z-10 text-center">
