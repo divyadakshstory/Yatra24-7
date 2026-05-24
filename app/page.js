@@ -1,52 +1,77 @@
-"use client";
-
-import { useState } from "react";
-
 export default function Home() {
-  const [pickup, setPickup] = useState("");
-  const [drop, setDrop] = useState("");
-
-  const whatsappLink = () => {
-    const msg = `🚖 *Yatra24×7 Premium Booking*\n\n📍 Pickup: ${pickup}\n📌 Drop: ${drop}\n\nBooked from website`;
-
-    return `https://wa.me/918002697331?text=${encodeURIComponent(msg)}`;
-  };
-
   return (
-    <main className="bg-black text-white overflow-hidden">
-      {/* Navbar */}
+    <main className="bg-black text-white min-h-screen">
 
-      <nav className="fixed top-0 left-0 w-full z-50 border-b border-white/10 backdrop-blur-xl bg-black/50">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
-          <h1 className="text-3xl font-extrabold tracking-wide text-[#d4a017]">
-            Yatra24×7
+      <nav className="fixed top-0 left-0 w-full z-50 bg-black/70 backdrop-blur border-b border-gray-800">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+          <h1 className="text-2xl font-bold text-[#fd4a01]">
+            Yatra24x7
           </h1>
 
           <div className="hidden md:flex gap-8 text-sm text-gray-300">
-            <a href="#services" className="hover:text-[#d4a017]">Services</a>
-            <a href="#fleet" className="hover:text-[#d4a017]">Fleet</a>
-            <a href="#reviews" className="hover:text-[#d4a017]">Reviews</a>
-            <a href="#contact" className="hover:text-[#d4a017]">Contact</a>
+            <a href="#services">Services</a>
+            <a href="#fleet">Fleet</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
           </div>
 
           <a
-            href={whatsappLink()}
+            href="https://wa.me/918002697331"
             target="_blank"
-            className="bg-[#d4a017] hover:bg-[#b8860b] text-black px-6 py-3 rounded-full font-bold transition-all"
+            className="bg-[#fd4a01] hover:bg-[#ff8860] text-black px-6 py-3 rounded-full font-bold"
           >
             Book Ride
           </a>
+
         </div>
       </nav>
 
-      {/* Hero */}
+      <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
 
-   <section className="relative min-h-screen flex items-center justify-center px-6">
+        <img
+          src="https://images.unsplash.com/photo-1511527844068-006b95d162c2?q=80&w=1600&auto=format&fit=crop"
+          alt="Luxury Cab"
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+        />
 
-  <img
-    src="https://images.unsplash.com/photo-1511527844068-006b95d162c2?q=80&w=1600&auto=format&fit=crop"
-    alt="Luxury Cab"
-    className="absolute inset-0 w-full h-full object-cover opacity-30"
-  />
+        <div className="max-w-5xl relative z-10 text-center">
 
-  <div className="max-w-7xl relative z-10 text-center">
+          <p className="uppercase tracking-[6px] text-[#fd4a01] mb-6">
+            Premium Cab Service Bihar
+          </p>
+
+          <h1 className="text-5xl md:text-7xl font-black leading-tight mb-8">
+            Premium cab booking for modern Bihar
+          </h1>
+
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-10">
+            Safe, verified rides available 24x7 across Bihar with premium comfort and trusted drivers.
+          </p>
+
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
+
+            <a
+              href="https://wa.me/918002697331"
+              target="_blank"
+              className="bg-[#fd4a01] text-black px-8 py-4 rounded-full font-bold"
+            >
+              Book on WhatsApp
+            </a>
+
+            <a
+              href="tel:+918002697331"
+              className="border border-white/30 px-8 py-4 rounded-full"
+            >
+              Call Now
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
+}
