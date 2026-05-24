@@ -58,20 +58,20 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row gap-4 justify-center">
 
-            <a
-              href="https://wa.me/918002697331"
-              target="_blank"
-              className="bg-[#fd4a01] hover:bg-[#ff7b42] text-black px-8 py-4 rounded-full font-black text-lg"
-            >
-              Book on WhatsApp
-            </a>
+       <a
+  href="https://wa.me/918002697331?text=Hello%20Yatra24x7,%20I%20want%20to%20book%20a%20ride."
+  target="_blank"
+  className="bg-[#ff5e00] hover:bg-[#ff7b2b] text-black px-8 py-4 rounded-full font-bold transition-all"
+>
+  Book on WhatsApp
+</a>
 
-            <a
-              href="tel:+918002697331"
-              className="border border-white/30 px-8 py-4 rounded-full text-lg"
-            >
-              Call Now
-            </a>
+        <a
+  href="tel:+918002697331"
+  className="border border-gray-500 px-8 py-4 rounded-full hover:border-[#ff5e00] transition-all"
+>
+  Call Now
+</a>
 
           </div>
 
@@ -115,22 +115,23 @@ export default function Home() {
               className="bg-black border border-gray-700 rounded-xl p-4 outline-none"
             />
 
-            <input
-              id="date"
-              type="date"
-              className="bg-black border border-gray-700 rounded-xl p-4 outline-none"
-            />
-
-            <input
-              id="time"
-              type="time"
-              className="bg-black border border-gray-700 rounded-xl p-4 outline-none"
-            />
+           <input
+  id="date"
+  type="date"
+  placeholder="Select Date"
+  className="bg-black border border-gray-700 rounded-xl p-4 outline-none"
+/>
+           <input
+  id="date"
+  type="date"
+  placeholder="Select Date"
+  className="bg-black border border-gray-700 rounded-xl p-4 outline-none"
+/>
 
       <select
   className="w-full bg-[#050816] border border-gray-800 rounded-2xl px-5 py-5 text-white outline-none focus:border-[#ff5e00]"
 >
-  <option>Choose Ride Type</option>
+<option>Choose Vehicle Type</option>
   <option>Sedan • Swift Dzire / Aura</option>
   <option>SUV • Ertiga / Scorpio</option>
   <option>Premium • Innova Crysta</option>
@@ -140,31 +141,34 @@ export default function Home() {
 
           <div className="text-center mt-10">
 
-            <button
-              onClick={() => {
-                const pickup = document.getElementById("pickup").value;
-                const drop = document.getElementById("drop").value;
-                const date = document.getElementById("date").value;
-                const time = document.getElementById("time").value;
-                const car = document.getElementById("car").value;
+           <button
+  onClick={() => {
+    const pickup = document.getElementById("pickup").value;
+    const drop = document.getElementById("drop").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const car = document.getElementById("car").value;
 
-                const message =
-                  `🚖 Yatra24x7 Booking Request\n\n` +
-                  `Pickup: ${pickup}\n` +
-                  `Drop: ${drop}\n` +
-                  `Date: ${date}\n` +
-                  `Time: ${time}\n` +
-                  `Vehicle: ${car}`;
+    const message =
+`🚖 Yatra24x7 Ride Booking
 
-                window.open(
-                  `https://wa.me/918002697331?text=${encodeURIComponent(message)}`
-                );
-              }}
-              className="bg-[#fd4a01] hover:bg-[#ff7b42] text-black px-10 py-4 rounded-full font-black text-lg transition-all"
-            >
-              Get Price on WhatsApp
-            </button>
+📍 Pickup: ${pickup}
+📍 Drop: ${drop}
 
+🚘 Vehicle: ${car}
+
+📅 Date: ${date}
+⏰ Time: ${time}`;
+
+    window.open(
+      `https://wa.me/918002697331?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
+  }}
+  className="bg-[#ff5e00] hover:bg-[#ff7b2b] text-black font-bold px-10 py-4 rounded-full transition-all"
+>
+  Get Price on WhatsApp
+</button>
           </div>
 
         </div>
