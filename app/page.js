@@ -321,67 +321,66 @@ export default function Home() {
 
       </section>
 
-      {/* CONTACT */}
+   {/* CONTACT SECTION */}
 
-      <section id="contact" className="bg-black py-24 px-6 border-t border-gray-800">
+<section
+  id="contact"
+  className="py-24 px-6 bg-gradient-to-b from-black to-[#111827] text-white"
+>
+  <div className="max-w-6xl mx-auto text-center">
 
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14">
+    <p className="uppercase tracking-[6px] text-[#ff6b00] text-sm mb-4">
+      Connect With Us
+    </p>
 
-          <div>
+    <h2 className="text-5xl font-black mb-6">
+      Contact Yatra24x7
+    </h2>
 
-            <p className="text-[#fd4a01] uppercase tracking-[4px] mb-4 font-bold">
-              Contact
-            </p>
+    <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
+      Premium cab booking service across Bihar.  
+      Safe rides, verified drivers and instant WhatsApp support.
+    </p>
 
-            <h2 className="text-5xl font-black mb-6">
-              Bihar rides available 24x7
-            </h2>
+    <div className="flex justify-center gap-6 flex-wrap">
 
-            <p className="text-gray-400 text-lg leading-8">
-              Book local rides, outstation trips, airport transfers & premium travel directly on WhatsApp.
-            </p>
+      <a
+        href="https://www.instagram.com/yatra24.7?igsh=amRkY2IweXFiY3g3"
+        target="_blank"
+        className="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center text-3xl hover:bg-[#E1306C] transition-all duration-300"
+      >
+        📸
+      </a>
 
-          </div>
+      <a
+        href="https://www.facebook.com/profile.php?id=61589987597600"
+        target="_blank"
+        className="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center text-3xl hover:bg-[#1877F2] transition-all duration-300"
+      >
+        👍
+      </a>
 
-          <div className="bg-[#111] rounded-3xl p-10 border border-gray-800">
+      <a
+        href="https://wa.me/918002697331"
+        target="_blank"
+        className="w-16 h-16 rounded-full border border-gray-700 flex items-center justify-center text-3xl hover:bg-[#25D366] transition-all duration-300"
+      >
+        💬
+      </a>
 
-            <div className="mb-6">
+    </div>
 
-              <p className="text-gray-500 mb-2">
-                Phone
-              </p>
+    <div className="mt-10 space-y-2 text-gray-400">
+      <p>📞 +91 8002697331</p>
+      <p>📍 Bihar Premium Cab Service</p>
+    </div>
 
-              <h3 className="text-2xl font-bold">
-                +91 8002697331
-              </h3>
+    <div className="mt-12 text-gray-500 text-sm">
+      © 2026 Yatra24x7. All rights reserved.
+    </div>
 
-            </div>
-
-            <div className="mb-6">
-
-              <p className="text-gray-500 mb-2">
-                Location
-              </p>
-
-              <h3 className="text-2xl font-bold">
-                Saharsa, Bihar
-              </h3>
-
-            </div>
-
-            <a
-              href="https://wa.me/918002697331"
-              target="_blank"
-              className="inline-block mt-4 bg-[#fd4a01] text-black px-8 py-4 rounded-full font-black"
-            >
-              Chat on WhatsApp
-            </a>
-
-          </div>
-
-        </div>
-
-      </section>
+  </div>
+</section>
 
     </main>
   );
