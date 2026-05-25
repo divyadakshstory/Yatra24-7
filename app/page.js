@@ -115,21 +115,29 @@ export default function Home() {
               className="bg-black border border-gray-700 rounded-xl p-4 outline-none"
             />
 
-           <input
+<div className="text-sm text-gray-400 mb-2">
+  Select Date
+</div>
+                
+  <input
   id="date"
   type="date"
-  placeholder="Select Date"
-  className="bg-black border border-gray-700 rounded-xl p-4 outline-none"
-/>
-           <input
-  id="date"
-  type="date"
-  placeholder="Select Date"
-  className="bg-black border border-gray-700 rounded-xl p-4 outline-none"
+  className="bg-black border border-gray-700 rounded-xl p-4 outline-none text-white"
 />
 
-      <select
-  className="w-full bg-[#050816] border border-gray-800 rounded-2xl px-5 py-5 text-white outline-none focus:border-[#ff5e00]"
+   <div className="text-sm text-gray-400 mb-2">
+  Select Time
+</div> 
+  
+  <input
+  id="time"
+  type="time"
+  className="bg-black border border-gray-700 rounded-xl p-4 outline-none text-white"
+/>
+
+<select
+  id="car"
+  className="bg-black border border-gray-700 rounded-xl p-4 outline-none md:col-span-2"
 >
 <option>Choose Vehicle Type</option>
   <option>Sedan • Swift Dzire / Aura</option>
@@ -141,7 +149,7 @@ export default function Home() {
 
           <div className="text-center mt-10">
 
-           <button
+          <button
   onClick={() => {
     const pickup = document.getElementById("pickup").value;
     const drop = document.getElementById("drop").value;
@@ -149,8 +157,7 @@ export default function Home() {
     const time = document.getElementById("time").value;
     const car = document.getElementById("car").value;
 
-    const message =
-`🚖 Yatra24x7 Ride Booking
+    const message = `🚖 Yatra24x7 Booking
 
 📍 Pickup: ${pickup}
 📍 Drop: ${drop}
@@ -160,10 +167,9 @@ export default function Home() {
 📅 Date: ${date}
 ⏰ Time: ${time}`;
 
-    window.open(
-      `https://wa.me/918002697331?text=${encodeURIComponent(message)}`,
-      "_blank"
-    );
+    const url = `https://wa.me/918002697331?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
   }}
   className="bg-[#ff5e00] hover:bg-[#ff7b2b] text-black font-bold px-10 py-4 rounded-full transition-all"
 >
