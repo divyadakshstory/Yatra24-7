@@ -164,7 +164,7 @@ export default function Home() {
 });
     const car = document.getElementById("car").value;
 
-    const message = `🚖 Yatra24x7 Booking
+const message = `🚖 Yatra24x7 Booking
 
 📍 Pickup: ${pickup}
 📍 Drop: ${drop}
@@ -172,11 +172,11 @@ export default function Home() {
 🚘 Vehicle: ${car}
 
 📅 Date: ${date}
-⏰ Time: ${formattedTime}
+⏰ Time: ${formattedTime}`;
 
-    const url = `https://wa.me/918002697331?text=${encodeURIComponent(message)}`;
+const url = `https://wa.me/918002697331?text=${encodeURIComponent(message)}`;
 
-    window.open(url, "_blank");
+window.open(url, "_blank");
   }}
   className="bg-[#ff5e00] hover:bg-[#ff7b2b] text-black font-bold px-10 py-4 rounded-full transition-all"
 >
