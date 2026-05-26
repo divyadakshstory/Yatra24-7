@@ -155,6 +155,13 @@ export default function Home() {
     const drop = document.getElementById("drop").value;
     const date = document.getElementById("date").value;
     const time = document.getElementById("time").value;
+    const formattedTime = new Date(
+  `1970-01-01T${time}`
+).toLocaleTimeString([], {
+  hour: "numeric",
+  minute: "2-digit",
+  hour12: true,
+});
     const car = document.getElementById("car").value;
 
     const message = `🚖 Yatra24x7 Booking
@@ -165,7 +172,7 @@ export default function Home() {
 🚘 Vehicle: ${car}
 
 📅 Date: ${date}
-⏰ Time: ${time}`;
+⏰ Time: ${formattedTime}
 
     const url = `https://wa.me/918002697331?text=${encodeURIComponent(message)}`;
 
