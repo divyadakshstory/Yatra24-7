@@ -81,5 +81,10 @@ export default function PrivacyPolicy() {
 </p>
 
 <p>
-  If you have any questions regarding this Privacy Policy, please contact us at <strong>Kumarshushant844@gmail.com</strong>.
+  If you have any questions regarding this Privacy Policy, please contact us at{" "}
+  <strong>Kumarshushant844@gmail.com</strong>.
 </p>
+
+    </LegalPage>
+  );
+}
