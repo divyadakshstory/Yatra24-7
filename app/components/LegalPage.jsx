@@ -6,7 +6,6 @@ export default function LegalPage({
   return (
     <main className="min-h-screen bg-gray-50 py-12 px-5">
       <div className="max-w-4xl mx-auto">
-
         <div className="bg-white rounded-3xl shadow-lg border border-gray-200 overflow-hidden">
 
           <div className="bg-blue-900 text-white p-8">
@@ -23,7 +22,7 @@ export default function LegalPage({
             </p>
           </div>
 
-          <div className="p-8 prose prose-gray max-w-none">
+          <div className="p-8 text-gray-800 leading-8 text-[16px]">
             {children}
           </div>
 
@@ -32,7 +31,6 @@ export default function LegalPage({
         <div className="text-center text-gray-500 text-sm mt-8">
           © {new Date().getFullYear()} Yatra24-7. All Rights Reserved.
         </div>
-
       </div>
     </main>
   );
