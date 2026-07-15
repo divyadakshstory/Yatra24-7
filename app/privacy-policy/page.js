@@ -70,19 +70,16 @@ export default function PrivacyPolicy() {
         <li>Contact us regarding privacy concerns.</li>
       </ul>
 
-      <h2>Contact Us</h2>
+    <h2>Contact Us</h2>
 
-      <p>
-        Email: support@yatra24-7.com
-      </p>
+<p>
+  Email: Kumarshushant844@gmail.com
+</p>
 
-      <p>
-        Website: https://yatra24-7.com
-      </p>
+<p>
+  Website: https://yatra24-7.com
+</p>
 
-      <p>
-        If you have questions regarding this Privacy Policy, please contact us.
-      </p>
-    </LegalPage>
-  );
-}
+<p>
+  If you have any questions regarding this Privacy Policy, please contact us at Kumarshushant844@gmail.com.
+</p>
